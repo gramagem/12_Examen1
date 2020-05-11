@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dothings</title>     
+    <link href="https://fonts.googleapis.com/css?family=Baskervville|Roboto&display=swap" rel="stylesheet">
+     
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+        }
+        header{
+            color: crimson;
+            padding: 5em 5em 5em 5em;
+        }               
+        h2{
+            color: #f20c40;
+            font-family: "Ogg-Roman";
+            font-size: 310px; 
+            text-align: center;                       
+            
+        }
+        h1{
+            color: cadetblue;
+           text-align: left;
+           margin-right: 20em;
+            line-height: 1.5em;
+        }
+        .menu{     
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding-top: 3.5em;
+            padding-right: 3em;
+            object-position: right;            
+            text-align: right;
+            cursor:col-resize;
+            font-size: 18px;
+            
+            justify-content: space-between; 
+        }
+        .menu a{
+            text-decoration: none;
+            color:cadetblue;
+            font-size: 18px;
+            padding: 0 0.5em;
+        }
+        img{
+            width: 100%;
+        }
+        .container{
+            display: flex;
+            grid-template: repeat(2,1fr)/repeat(2,8fr);
+            grid-gap: 25px;
+            padding: 5em;            
+        }
+        main figure:first-child{
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .uno, .dos, .tres{
+               overflow: hidden;
+        }
+        .uno img{
+            background: black;            
+            opacity: 1;
+            transition: 1s opacity;
+        }       
+        .uno:hover{
+            opacity: 0.5;
+        }
+        .dos img{
+            background: black;
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .dos:hover{
+            opacity: 0.5;
+            
+        }
+        .tres img{
+            background: black;
+            opacity: 1;
+            transition: 1s opacity;
+        }
+        .tres:hover{
+            opacity: 0.5;     
+        }
+        /*pie*/
+        .pie{              
+            display: flex;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            line-height: 28px;   
+        }
+        .pie a{
+            text-decoration: none;
+            color:cadetblue;
+        }
+         .col1{
+            width: 50%;
+            padding: 2em 4em;
+        }
+        .col2{
+            width: 50%;
+            padding: 2em 0em;
+        }
+        col2 p:last-child{
+            align-items: baseline;
+        }
+        @media (max-device-width: 600px){
+            body{
+                background: pink;
+            }
+            menu{
+                justify-content: center;
+                font-size: 2.2em;
+                height: 70px;
+            }
+            header{
+                height: 50vh;
+            }
+            h1{
+                position: relative;
+                width: 100%;
+                font-size: 2em;
+                padding: 80px 40px 0 40px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+       <nav class="menu">
+            <a href="#">Work</a>
+            <a href="#">Inspo</a>
+            <a href="#">About</a>
+        </nav>
+        <h1>We are a brand experience design company.  We partner with clients to help them connect with their audiences through outstanding products, experiences, and environments.  We do it through our unique design “with a point of view” approach.  We believe that enriching product experiences with a sense of style always delivers business results.</h1>
+        <h2>Dothings</h2>
+    </header>
+    <main class="container">            
+            <div class="uno">
+               <img src="img/dothings.jpg">
+               
+           </div>        
+       <div class="dos">
+            <img src="img/vote.jpg" alt="dos">
+                   
+       <div class="tres">
+            <img src="img/TomFord.gif" alt="tres">
+            
+           </div>
+        </div>            
+    </main>
+     <footer class="pie">
+         <div class="col1">
+            <h3>61 Greenpoint Ave, Suite #306</h3>
+            <h4>Brooklyn, NY 11222</h4>
+            <h5>212 228 3328</h5>
+        </div>
+        <div class="col2">
+            <a href="maito.hello@dothingsnyc.com">hello@dothingsnyc.com</a> <br>
+            <a href="https://www.instagram.com/dothings_nyc/">Instragram</a> <br>
+            <a href="https://www.linkedin.com/company/dothings-nyc/">Linkedin</a>
+            <h6>©Dothings 2019</h6>
+        </div>
+    </footer>
+</body>
+</html>
